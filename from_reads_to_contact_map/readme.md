@@ -8,9 +8,13 @@
 для самостоятельной работы скачайте референс генома человека hg38 в fasta формате:
 https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/
 и риды Hi-C:
+
 [forward](https://s3.amazonaws.com/4dn-dcic-public/hic-data-analysis-bootcamp/input_R1.fastq.gz)
+
 [reverse](https://s3.amazonaws.com/4dn-dcic-public/hic-data-analysis-bootcamp/input_R2.fastq.gz)
-Эти данные взяты с репозитория Hi-C bootcamp с хорошими описаниями пайплайнов в виде презентаций c воркшопов. 
+
+Эти данные взяты с репозитория Hi-C bootcamp с хорошими 
+описаниями пайплайнов в виде презентаций c воркшопов. 
 Ссылка: https://github.com/hms-dbmi/hic-data-analysis-bootcamp
 
 ## Настройка окружения
@@ -39,7 +43,9 @@ mamba install -c bioconda samtools
    * filter_5end.pl
    * two_read_bam_combiner.pl
    * get_stats.pl
-5. Скомпилированный .jar файл [Picard](https://github.com/broadinstitute/picard) его обязательно запускать на Java выше 17ой версии. Скачать скомпилированный picard.jar с последнего релиза можно тут: https://github.com/broadinstitute/picard
+5. Скомпилированный .jar файл [Picard](https://github.com/broadinstitute/picard) его обязательно запускать на Java выше 17ой версии. Скачать скомпилированный picard.jar с последнего релиза можно тут: 
+https://github.com/broadinstitute/picard/releases/tag/3.0.0
+
 6. create_chrom_sizes.py Скрипт для создания файла с размерами хромосом референсаю 
 7. [Cooler](https://github.com/open2c/cooler)
 ```bash
