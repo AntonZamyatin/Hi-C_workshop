@@ -198,7 +198,7 @@ cooler cload pairix \
 ```bash
 cooler zoomify \
 	-n ${CPU} \
-	-r 100000N, \
+	-r 100000N \
 	--balance \
 	--balance-args "--nproc ${CPU}" \
 	-o COOLER/${label}_multires.mcool \
